@@ -9,7 +9,7 @@ const GalleryScreen = () => {
   useEffect(() => {
     const fetchGallery = async () => {
       try {
-        const response = await axios.get('./data/gallery.json');
+        const response = await axios.get('https://Lithoid.github.io/MobileApp/data/gallery.json');
         setGalleryData(response.data);
         setLoading(false);
       } catch (error) {
